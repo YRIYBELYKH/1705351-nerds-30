@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Юрий Белых](https://up.htmlacademy.ru/htmlcss/30/user/1705351).
-* Наставник: `Неизвестно`.
+* Наставник: `[Никита Победоносцев](https://htmlacademy.ru/profile/nikkypizza)`.
 
 ---
 
