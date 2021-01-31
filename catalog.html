@@ -3,70 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Интернет магазин Nerds</title>
+    <title>Каталог товаров магазина Nerds</title>
   </head>
   <body>
     <header>
+      <a href="index.html" title="На главную">
+        <img
+          src="img/nerds-logo.svg"
+          alt="Логотип студии Nerds"
+          width="160"
+          height="65"
+        />
+      </a>
       <nav>
-        <a href="index.html"
-          ><img
-            src="img/nerds-logo.svg"
-            alt="Логотип студии Nerds"
-            width="160"
-            height="65"
-        /></a>
         <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
-          <li>
-            <a href="#">
-              <img
-                src="img/cart-icon.svg"
-                alt="Корзина"
-                width="15"
-                height="15"
-              />
-              <span>Корзина</span>
-            </a>
-          </li>
-        </ul>
+        <a href="#">Корзина</a>
       </nav>
     </header>
     <main>
       <h1>Магазин готовых шаблонов</h1>
       <section>
         <h2>Фильтр товаров</h2>
-        <h3>Стоимость:</h3>
+        <p>Стоимость:</p>
         <form action="https://echo.htmlacademy.ru/" method="GET">
-          <input type="range" min="0" max="100" step="1" value="75" />
-          <div>
-            <label
-              >От
-              <input type="text" name="min-interval" value="0" />
-            </label>
-            <label
-              >До
-              <input type="text" name="max-interval" value="15000" />
-            </label>
-          </div>
+          <!--Здесь будет ползунок-->
+
           <fieldset>
             <legend>сетка:</legend>
             <ul>
               <li>
-                <input type="radio" name="grid" id="filter-grid1" checked />
-                <label for="filter-grid1">Адаптивная</label>
+                <input type="radio" name="grid" id="adaptive-grid" checked />
+                <label for="adaptive-grid">Адаптивная</label>
               </li>
               <li>
-                <input type="radio" name="grid" id="filter-grid2" />
-                <label for="filter-grid2">Фиксированная</label>
+                <input type="radio" name="grid" id="fix-grid" />
+                <label for="fix-grid">Фиксированная</label>
               </li>
               <li>
-                <input type="radio" name="grid" id="filter-grid3" />
-                <label for="filter-grid3">Резиновая</label>
+                <input type="radio" name="grid" id="stretch-grid" />
+                <label for="stretch-grid">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -122,7 +102,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">показать</button>
+          <button type="submit">Показать</button>
         </form>
       </section>
       <section>
@@ -141,155 +121,110 @@
         </ul>
         <ul>
           <li>
-            <img src="img/icon-down-dir.svg" alt="" />
+            <!--Добавить назначение кнопок-->
+            <img
+              src="img/icon-down-dir.svg"
+              alt="Сортировать по убыванию цены"
+              title="Сортировать по убыванию цены"
+            />
           </li>
           <li>
-            <img src="img/icon-up-dir.svg" alt="" />
+            <img
+              src="img/icon-up-dir.svg"
+              alt="Сортировать по возрастанию цены"
+              title="Сортировать по возрастанию цены"
+            />
           </li>
         </ul>
         <ul>
           <li>
             <div>
               <img
-                src="img/browser.png"
-                alt="header of cart"
-                width="360"
-                height="40"
-              />
-              <img
-                src="img/MaskGroup1.png"
-                alt="Sedona"
+                src="https://via.placeholder.com/150x100"
+                alt="Информационный сайт для туристов Sedona"
                 width="358"
                 height="578"
               />
             </div>
             <div>
-              <a href="product.html"><h3>Sedona</h3></a>
-              <p>
-                Информационный сайт<br />
-                для туристов
-              </p>
-              <p>9900 &#8381;</p>
+              <a href="#"><h3>Sedona</h3></a>
+              <p>Информационный сайт для туристов</p>
+              <button type="button">9900 &#8381;</button>
             </div>
           </li>
           <li>
             <div>
               <img
-                src="img/browser.png"
-                alt="header of cart"
-                width="360"
-                height="40"
-              />
-              <img
-                src="img/MaskGroup2.png"
-                alt="Pink Upp"
+                src="https://via.placeholder.com/150x100"
+                alt="Продуктовый лендинг приложения для IOS и Android Pink App"
                 width="358"
                 height="578"
               />
             </div>
             <div>
-              <a href="product.html"><h3>Pink Upp</h3></a>
-              <p>
-                Продуктовый лендинг<br />
-                приложения для IOS и Android
-              </p>
-              <p>9900 &#8381;</p>
+              <a href="#"><h3>Pink App</h3></a>
+              <p>Продуктовый лендинг приложения для IOS и Android</p>
+              <button type="button">9900 &#8381;</button>
             </div>
           </li>
           <li>
             <div>
               <img
-                src="img/browser.png"
-                alt="header of cart"
-                width="360"
-                height="40"
-              />
-              <img
-                src="img/MaskGroup3.png"
-                alt="Barbershop"
+                src="https://via.placeholder.com/150x100"
+                alt="Сайт салона красоты для мужчин Barbershop Borodinski"
                 width="358"
                 height="578"
               />
             </div>
             <div>
-              <a href="product.html"><h3>Barbershop</h3></a>
-              <p>
-                Сайт салона красоты.<br />
-                Для мужчин, да.
-              </p>
-              <p>9900 &#8381;</p>
+              <a href="#"><h3>Barbershop</h3></a>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <button type="button">9900 &#8381;</button>
             </div>
           </li>
           <li>
             <div>
               <img
-                src="img/browser.png"
-                alt="header of cart"
-                width="360"
-                height="40"
-              />
-              <img
-                src="img/MaskGroup4.png"
-                alt="Mishka"
+                src="https://via.placeholder.com/150x100"
+                alt="Интернет-магазин вязаных игрушек Mishka"
                 width="358"
                 height="578"
               />
             </div>
             <div>
-              <a href="product.html"><h3>Mishka</h3></a>
-              <p>
-                Интернет-магазин<br />
-                вязаных игрушек
-              </p>
-              <p>9900 &#8381;</p>
+              <a href="#"><h3>Mishka</h3></a>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button type="button">9900 &#8381;</button>
             </div>
           </li>
           <li>
             <div>
               <img
-                src="img/browser.png"
-                alt="header of cart"
-                width="360"
-                height="40"
-              />
-              <img
-                src="img/MaskGroup5.png"
-                alt="A Plus"
+                src="https://via.placeholder.com/150x100"
+                alt="Лендинг курсов повышения квалификации A Plus"
                 width="358"
                 height="578"
               />
             </div>
             <div>
-              <a href="product.html"><h3>A Plus</h3></a>
-              <p>
-                Лендинг курсов повышения<br />
-                квалификации
-              </p>
-              <p>9900 &#8381;</p>
+              <a href="#"><h3>A Plus</h3></a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button type="button">9900 &#8381;</button>
             </div>
           </li>
           <li>
             <div>
               <img
-                src="img/browser.png"
-                alt="header of cart"
-                width="360"
-                height="40"
-              />
-              <img
-                src="img/MaskGroup6.png"
-                alt="Кваст"
+                src="https://via.placeholder.com/150x100"
+                alt="Промо-сайт производителя крафтового пива Кваст"
                 width="358"
                 height="578"
               />
             </div>
             <div>
-              <a href="product.html"><h3>Кваст</h3></a>
-              <p>
-                Промо-сайт производителя<br />
-                крафтового кваса
-              </p>
-              <p>9900 &#8381;</p>
+              <a href="#"><h3>Кваст</h3></a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <button type="button">9900 &#8381;</button>
             </div>
           </li>
         </ul>
@@ -298,56 +233,96 @@
             <a>1</a>
           </li>
           <li>
-            <a href="#">2</a>
+            <a href="#" title="перейти на страницу два">2</a>
           </li>
           <li>
-            <a href="#">3</a>
+            <a href="#" title="перейти на страницу три">3</a>
           </li>
           <li>
-            <a href="#">Следующая</a>
+            <a href="#" title="Следующая страница">Следующая</a>
           </li>
         </ul>
       </section>
     </main>
+    <section>
+      <h2>Карта</h2>
+      <div>
+        <img
+          src="https://via.placeholder.com/150x100"
+          alt="Карта с расположением студии Nerds в Санкт-Петербурге"
+          width="1440"
+          height="416"
+        />
+        <img
+          src="ihttps://via.placeholder.com/150x100"
+          alt="Указатель расположения студии Nerds"
+          width="231"
+          height="190"
+        />
+      </div>
+    </section>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="#" method="POST">
+        <label for="field_name">Ваше имя:</label>
+        <input
+          type="text"
+          name="username"
+          id="field_name"
+          placeholder="Имя Фамилия"
+        />
+        <label for="field_email">Ваш email:</label>
+        <input
+          type="email"
+          name="email"
+          id="field_email"
+          placeholder="email@example.com"
+        />
+        <label for="message">Текст письма:</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="В свободной форме"
+        ></textarea>
+        <input type="submit" name="submit" value="Отправить" />
+        <button type="button" title="Закрыть окно отправки сообщения">
+          Закрыть
+        </button>
+      </form>
+    </section>
     <footer>
       <section>
-        <h2>Карта</h2>
-        <figure>
-          <img src="img/map1.png" alt="карта" width="1440" height="416" />
-          <img
-            src="img/map-marker1.png"
-            alt="казатель"
-            width="231"
-            height="190"
-          />
-        </figure>
-        <div>
-          <p>NERDS DESIGN STUDIO</p>
-          <p>
-            191186, Санкт-петербург,<br />
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        </div>
-        <a href="blank.html">напишите нам</a>
+        <h2>Контакты</h2>
+        <p>NERDS DESIGN STUDIO</p>
+        <address>191186, Санкт-петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+        <a href="#">напишите нам</a>
       </section>
       <section>
         <h2>Соцсети</h2>
         <ul>
           <li>
-            <a href="#"><img src="img/vk-icon.svg" alt="vkontakte" /></a>
+            <a href="#" title="Наш Вконтакте">
+              <img src="img/vk-icon.svg" alt="vkontakte" />
+            </a>
           </li>
           <li>
-            <a href="#"><img src="img/fb-icon.svg" alt="facebook" /></a>
+            <a href="#" title="Наш Фейсбук">
+              <img src="img/fb-icon.svg" alt="facebook" />
+            </a>
           </li>
           <li>
-            <a href="#"><img src="img/instagram-icon.svg" alt="instagram" /></a>
+            <a href="#" title="Наш Инстаграм">
+              <img src="img/instagram-icon.svg" alt="instagram" />
+            </a>
           </li>
         </ul>
       </section>
       <div>
         <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10&#37; для друзей из социальных сетей.</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
   </body>
