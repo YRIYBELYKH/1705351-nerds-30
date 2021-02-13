@@ -57,15 +57,18 @@
   --active-icon-color: #d7373b;
   --inactive-icon-color: #e1e1e1;
   --hover-icon-color: #e74246;
+  --shadow-icon-color: rgba(0, 1, 1, 0.1);
+  --active-icon-opacity-color: rgba(255, 255, 255, 0.3);
 
-  /* Popap */
+  /* Popup */
 
   --inactive-input-border-color: #d7dcde;
   --hover-input-border-color: #b4b9bb;
   --focus-input-border-color: #000000;
   --error-input-border-color: #e74246;
+  --input-opacity-color: rgba(68, 68, 68, 0.5);
 
-  /* product filter */
+  /* Product filter */
 
   --inactive-btn-show-color: #eeeeee;
   --active-btn-show-color: #d5d5d5;
@@ -74,7 +77,7 @@
   --price-sorting-icon-color: #a6a6a6;
   --price-sorting-icon-active-color: #231f20;
 
-  /* product cards */
+  /* Product cards */
 
   --inactive-headercard-color: #4d4d4d;
   --hover-headercard-color: #4d4d4d;
@@ -96,6 +99,17 @@
   font-style: normal;
   color: var(--basic-dark);
   background-color: var(--basic-white);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 /* Main header */
@@ -153,7 +167,7 @@
   color: var(--basic-dark);
 }
 
-/* buttons */
+/* Buttons */
 
 .button {
   font-size: 16px;
@@ -165,6 +179,7 @@
   font-weight: 500;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -258,8 +273,14 @@
   color: var(--basic-black);
 }
 
-.about_table_percents td {
+.about_table td {
   line-height: 18px;
+  font-weight: 400;
+}
+
+.about_table_percents sup {
+  font-size: 26px;
+  line-height: 40px;
 }
 
 /* Partners */
@@ -269,17 +290,17 @@
   list-style: none;
 }
 
-.partners_img {
+.partners_item a {
   color: var(--basic-black);
   opacity: 0.2;
 }
 
-.partners_img:hover {
+.partners_item a:hover {
   color: var(--basic-black);
   opacity: 1;
 }
 
-.partners_img:active {
+.partners_item a:active {
   color: var(--basic-black);
   opacity: 0.1;
 }
@@ -301,29 +322,45 @@
 
 .modal_field {
   border: 2px solid var(--inactive-input-border-color);
+  border-radius: 3px;
+  font-family: inherit;
+  outline: none;
+}
+
+.modal_field_username {
+  width: 360px;
+  height: 50px;
+}
+
+.modal_field_emale {
+  width: 360px;
+  height: 50px;
+}
+
+.modal_field_message {
+  width: 760px;
+  height: 118px;
 }
 
 .modal_field:hover {
   border-color: var(--hover-input-border-color);
 }
 
-.modal_form input:focus {
+.modal_field:focus {
   border-color: var(--basic-black);
 }
 
-.modal_form input::placeholder,
-.modal_form input::placeholder:hover,
-.modal_form input::placeholder:focus {
+.modal_form input:focus::placeholder {
   color: var(--special-gray);
 }
 
-.modal_form input::placeholder:invalid {
+.modal_field:invalid {
   color: var(--error-input-border-color);
+  border-color: var(--error-input-border-color);
 }
 
-input::placeholder,
-input::placeholder:hover {
-  opacity: 50%;
+.modal_close_button {
+  cursor: pointer;
 }
 
 /* Contacts */
@@ -339,6 +376,7 @@ input::placeholder:hover {
 .contacts_description {
   line-height: 18px;
   color: var(--special-lightgray);
+  font-style: normal;
 }
 
 .contacts_phone {
@@ -353,52 +391,26 @@ input::placeholder:hover {
   list-style: none;
 }
 
-.footer_icon {
+.footer_social_link {
   width: 81px;
   height: 81px;
   background-color: var(--inactive-icon-color);
   border-radius: 50%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer_icon:hover {
+.footer_social_link:hover {
   background-color: var(--hover-icon-color);
 }
 
-.footer_icon:active {
+.footer_social_link:active {
   background-color: var(--active-icon-color);
+  box-shadow: inset 0px 3px var(--shadow-icon-color);
 }
 
-.footer_social_link_vk,
-.footer_social_link_fb,
-.footer_social_link_ins {
-  position: absolute;
-}
-
-.footer_social_link_vk {
-  top: 33px;
-  left: 27px;
-}
-
-.footer_social_link_fb {
-  top: 29px;
-  left: 34px;
-}
-
-.footer_social_link_ins {
-  top: 30px;
-  left: 30px;
-}
-
-.footer_social_link_vk svg :hover,
-.footer_social_link_fb svg :hover,
-.footer_social_link_ins svg :hover {
-  fill: var(--basic-black);
-}
-
-.footer_social_link_vk svg :active,
-.footer_social_link_fb svg :active,
-.footer_social_link_ins svg :active {
+.footer_social_link:active svg {
   fill: var(--basic-white);
   opacity: 0.3;
 }
