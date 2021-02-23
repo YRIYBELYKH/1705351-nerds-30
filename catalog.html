@@ -48,7 +48,7 @@
               <li class="site_nav_item">
                 <a href="#">Клиенты </a>
               </li>
-              <li class="site_nav_item">
+              <li class="site_nav_item site_nav_item--current">
                 <a href="#">Магазин </a>
               </li>
               <li class="site_nav_item">
@@ -184,36 +184,35 @@
           </li>
         </ul>
         <ul class="card_filter_icon_list">
-          <li class="card_filter_icon_item card_filter_icon_item--current">
-            <svg
-              width="11"
-              height="10"
-              viewBox="0 0 11 10"
-              fill="#A6A6A6"
-              opacity="0.2"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M5.5 10L0 0H11" />
-            </svg>
+          <li class="card_filter_icon_item card_filter_icon_item">
+            <button class="card_filter_sort card_filter_sort--current" type="button" title="цена по убыванию">
+              <svg
+                width="11"
+                height="10"
+                viewBox="0 0 11 10"
+                fill="#A6A6A6"
+                opacity="0.2"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5.5 10L0 0H11" />
+              </svg>
+            </button>
           </li>
           <li class="card_filter_icon_item">
-            <svg
-              width="11"
-              height="10"
-              viewBox="0 0 11 10"
-              fill="#A6A6A6"
-              opacity="0.2"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M5.5 0L0 10H11L5.5 0Z" />
-            </svg>
+            <button class="card_filter_sort type="button" title="цена по возрастанию">
+              <svg
+                width="11"
+                height="10"
+                viewBox="0 0 11 10"
+                fill="#A6A6A6"
+                opacity="0.2"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5.5 0L0 10H11L5.5 0Z" />
+              </svg>
+            </button>
           </li>
         </ul>
-        <div class="card_top">
-          <div class="card_top_circle card_top_circle_close"></div>
-          <div class="card_top_circle card_top_circle_hide"></div>
-          <div class="card_top_circle card_top_circle_minimize"></div>
-        </div>
         <ul class="card_list">
           <li class="card_item">
             <img
@@ -237,11 +236,13 @@
               width="358"
               height="578"
             />
-            <a class="card_item_title" href="#"><h3>Pink App</h3></a>
-            <p>Продуктовый лендинг приложения для IOS и Android</p>
-            <button class="button" type="button" title=" Добавить в корзину">
-              9900 &#8381;
-            </button>
+            <div class="card_popup">
+              <a class="card_item_title" href="#"><h3>Pink App</h3></a>
+              <p>Продуктовый лендинг приложения для IOS и Android</p>
+              <button class="button" type="button" title=" Добавить в корзину">
+                9900 &#8381;
+              </button>
+            </div>
           </li>
           <li class="card_item">
             <img
@@ -250,11 +251,13 @@
               width="358"
               height="578"
             />
-            <a class="card_item_title" href="#"><h3>Barbershop</h3></a>
-            <p>Сайт салона красоты. Для мужчин, да.</p>
-            <button class="button" type="button" title=" Добавить в корзину">
-              9900 &#8381;
-            </button>
+            <div class="card_popup">
+              <a class="card_item_title" href="#"><h3>Barbershop</h3></a>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <button class="button" type="button" title=" Добавить в корзину">
+                9900 &#8381;
+              </button>
+            </div>
           </li>
           <li class="card_item">
             <img
@@ -263,11 +266,13 @@
               width="358"
               height="578"
             />
-            <a class="card_item_title" href="#"><h3>Mishka</h3></a>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <button class="button" type="button" title=" Добавить в корзину">
-              9900 &#8381;
-            </button>
+            <div class="card_popup">
+              <a class="card_item_title" href="#"><h3>Mishka</h3></a>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button class="button" type="button" title=" Добавить в корзину">
+                9900 &#8381;
+              </button>
+            </div>
           </li>
           <li class="card_item">
             <img
@@ -276,11 +281,13 @@
               width="358"
               height="578"
             />
-            <a class="card_item_title" href="#"><h3>A Plus</h3></a>
-            <p>Лендинг курсов повышения квалификации</p>
-            <button class="button" type="button" title=" Добавить в корзину">
-              9900 &#8381;
-            </button>
+            <div class="card_popup">
+              <a class="card_item_title" href="#"><h3>A Plus</h3></a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button class="button" type="button" title=" Добавить в корзину">
+                9900 &#8381;
+              </button>
+            </div>
           </li>
           <li class="card_item">
             <img
@@ -289,11 +296,13 @@
               width="358"
               height="578"
             />
-            <a class="card_item_title" href="#"><h3>Кваст</h3></a>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <button class="button" type="button" title=" Добавить в корзину">
-              9900 &#8381;
-            </button>
+            <div class="card_popup">
+              <a class="card_item_title" href="#"><h3>Кваст</h3></a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <button class="button" type="button" title=" Добавить в корзину">
+                9900 &#8381;
+              </button>
+            </div>
           </li>
         </ul>
         <ul class="pagination_list">
