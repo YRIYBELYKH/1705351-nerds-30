@@ -72,42 +72,24 @@
           <h1 class="visually-hidden">Интернет магазин Nerds</h1>
           <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
-            <input
-              class="visually-hidden"
-              type="radio"
-              name="point"
-              title="переключить слайд"
-              id="slide1"
-              checked
-            />
-            <input
-              class="visually-hidden"
-              type="radio"
-              name="point"
-              title="переключить слайд"
-              id="slide2"
-            />
-            <input
-              class="visually-hidden"
-              type="radio"
-              name="point"
-              title="переключить слайд"
-              id="slide3"
-            />
             <ul class="features_list">
-              <li class="features_item features_item_expensive">
+              <li
+                class="features_item features_item_expensive features_item--curent"
+              >
                 <p class="features_slogan">Долго, дорого, скурпулезно.</p>
-                <p class="features_text">
+                <p class="features_text text_expensive">
                   Математически выверенный дизайн для&nbsp;вашего сайта или
                   мобильного приложения.
                 </p>
                 <a class="button features_button" href="#">Узнать больше </a>
               </li>
               <li class="features_item features_item_accuracy">
-                <p class="features_slogan">Любим математику как никто другой</p>
-                <p class="features_text">
-                  Никакого креатива, только математические формулы для расчета
-                  идеальных пропорций
+                <p class="features_slogan slogan_accuracy">
+                  Любим математику как никто другой
+                </p>
+                <p class="features_text text_accuracy">
+                  Никакого креатива, только математические формулы
+                  для&nbsp;расчета идеальных пропорций
                 </p>
                 <a class="button features_button" href="#">Узнать больше </a>
               </li>
@@ -116,17 +98,29 @@
                   Только ночь,<br />
                   только хардкор
                 </p>
-                <p class="features_text">
+                <p class="features_text text_nightshift">
                   Работать днем, как все? Мы против этого. Ближе к полуночи
                   работа только начинается.
                 </p>
                 <a class="button features_button" href="#">Узнать больше </a>
               </li>
             </ul>
-            <div class="controls">
-              <label for="slide1"></label>
-              <label for="slide2"></label>
-              <label for="slide3"></label>
+            <div class="slide_controls">
+              <button
+                class="slide_control slide_control--current"
+                type="button"
+                aria-label="Первый слайд"
+              ></button>
+              <button
+                class="slide_control"
+                type="button"
+                aria-label="Второй слайд"
+              ></button>
+              <button
+                class="slide_control"
+                type="button"
+                aria-label="Третий слайд"
+              ></button>
             </div>
           </section>
         </div>
@@ -137,7 +131,7 @@
           <ul class="services_list">
             <li class="services_item">
               <img
-                src="img/Ilustrations/illustration-websites.png"
+                src="img/ilustrations/illustration-websites.png"
                 alt="веб-сайты"
                 width="300"
                 height="146"
@@ -150,7 +144,7 @@
             </li>
             <li class="services_item">
               <img
-                src="img/Ilustrations/illustration-apps.png"
+                src="img/ilustrations/illustration-apps.png"
                 alt="приложения"
                 width="300"
                 height="146"
@@ -161,7 +155,7 @@
             </li>
             <li class="services_item">
               <img
-                src="img/Ilustrations/illustration-presentations.png"
+                src="img/ilustrations/illustration-presentations.png"
                 alt="презентации"
                 width="300"
                 height="146"
@@ -200,7 +194,7 @@
             <div class="about_right_column">
               <div class="about_img">
                 <img
-                  src="img/Ilustrations/illustration- nerds.png"
+                  src="img/ilustrations/illustration- nerds.png"
                   alt="Nerds"
                   width="360"
                   height="208"
@@ -235,7 +229,7 @@
               >
                 <img
                   class="partners_img"
-                  src="img/Logo/logo-htmlacademy.svg"
+                  src="img/logo/logo-htmlacademy.svg"
                   alt="логотип HTML Academy"
                 />
               </a>
@@ -247,7 +241,7 @@
               >
                 <img
                   class="partners_img"
-                  src="img/Logo/logo-borodinski.svg"
+                  src="img/logo/logo-borodinski.svg"
                   alt="логотип Barbershop Borodinski"
                 />
               </a>
@@ -259,7 +253,7 @@
               >
                 <img
                   class="partners_img"
-                  src="img/Logo/logo-pinkapp.svg"
+                  src="img/logo/logo-pinkapp.svg"
                   alt="логотип Pink"
                 />
               </a>
@@ -268,7 +262,7 @@
               <a href="#" title="Интернет-магазин вязаных игрушек Mishka">
                 <img
                   class="partners_img"
-                  src="img/Logo/logo-mishka.svg"
+                  src="img/logo/logo-mishka.svg"
                   alt="логотип Mishka"
                 />
               </a>
@@ -292,7 +286,7 @@
         <div class="map_marker">
           <img
             src="img/map-marker.png"
-            alt="Указатель расположения студии Nerds"
+            alt="Карта с расположением студии Nerds в Санкт-Петербурге по адресу ул. Б. Конюшенная, д. 19/8"
             width="231"
             height="190"
           />
@@ -301,7 +295,10 @@
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts_header">NЁRDS DESIGN STUDIO</p>
           <address class="contacts_description">
-            191186, Санкт-петербург, ул. Б. Конюшенная, д. 19/8
+            <span class="contacts_description_padding"
+              >191186, Санкт-Петербург,</span
+            >
+            ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8
           </address>
           <a class="contacts_phone" href="tel:+78122757575"
             >тел. +7 (812) 275-75-75

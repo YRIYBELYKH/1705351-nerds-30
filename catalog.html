@@ -77,6 +77,7 @@
             class="product_filter"
             action="https://echo.htmlacademy.ru/"
             method="GET"
+            target="blank"
           >
             <fieldset>
               <legend class="range_title">Стоимость:</legend>
@@ -85,8 +86,8 @@
                   <div class="range_scale">
                     <div class="range_bar"></div>
                   </div>
-                  <div class="toggle toggle_min"></div>
-                  <div class="toggle toggle_max"></div>
+                  <div class="toggle toggle_min" tabindex="0"></div>
+                  <div class="toggle toggle_max" tabindex="0"></div>
                 </div>
                 <div class="price_controls">
                   <label class="min_price"
@@ -112,106 +113,103 @@
             <fieldset class="grids_filter">
               <legend class="grids_filter_title">сетка:</legend>
               <ul>
-                <li class="filter_option filter_radio">
-                  <label>
-                    <input
-                      class="filter_input filter_input_radio"
-                      type="radio"
-                      name="grid"
-                      checked
-                    />
-                    <span class="check_radio"></span>
-                    <span class="check_desc">Адаптивная</span>
-                  </label>
+                <li class="grids_filter_item">
+                  <input
+                    class="grids_filter_input filter_input_radio visually-hidden"
+                    type="radio"
+                    name="grid"
+                    id="adaptive"
+                    checked
+                  />
+                  <label for="adaptive" class="grids_filter_label"
+                    >Адаптивная</label
+                  >
                 </li>
-                <li class="filter_option filter_radio">
-                  <label>
-                    <input
-                      class="filter_input filter_input_radio"
-                      type="radio"
-                      name="grid"
-                    />
-                    <span class="check_radio"></span>
-                    <span class="check_desc">Фиксированная</span>
-                  </label>
+                <li class="grids_filter_item">
+                  <input
+                    class="grids_filter_input filter_input_radio visually-hidden"
+                    type="radio"
+                    name="grid"
+                    id="fix"
+                  />
+                  <label for="fix" class="grids_filter_label"
+                    >Фиксированная</label
+                  >
                 </li>
-                <li class="filter_option filter_radio">
-                  <label>
-                    <input
-                      class="filter_input filter_input_radio"
-                      type="radio"
-                      name="grid"
-                    />
-                    <span class="check_radio"></span>
-                    <span class="check_desc">Резиновая</span>
-                  </label>
+                <li class="grids_filter_item">
+                  <input
+                    class="grids_filter_input filter_input_radio visually-hidden"
+                    type="radio"
+                    name="grid"
+                    id="stretch"
+                  />
+                  <label for="stretch" class="grids_filter_label"
+                    >Резиновая</label
+                  >
                 </li>
               </ul>
             </fieldset>
             <fieldset class="features_filter">
-              <legend class="features_filter_title">особенности:</legend>
+              <legend class="features_filter_title">Особенности:</legend>
               <ul>
-                <li class="filter_option filter_checkbox">
-                  <label>
-                    <input
-                      class="filter_input filter_input_checkbox"
-                      type="checkbox"
-                      name="features"
-                      value="slider"
-                      checked
-                    />
-                    <span class="check_box"></span>
-                    <span class="check_desc">Слайдер</span>
-                  </label>
+                <li class="features_filter_item">
+                  <input
+                    class="features_filter_input filter_input_checkbox visually-hidden"
+                    type="checkbox"
+                    name="slider_feature"
+                    id="slider"
+                    checked
+                  />
+                  <label for="slider" class="features_filter_label"
+                    >Слайдер</label
+                  >
                 </li>
-                <li class="filter_option filter_checkbox">
-                  <label>
-                    <input
-                      class="filter_input filter_input_checkbox"
-                      type="checkbox"
-                      name="features"
-                      value="block-of-advantages"
-                    />
-                    <span class="check_box"></span>
-                    <span class="check_desc">Блок перимуществ</span>
-                  </label>
+                <li class="features_filter_item">
+                  <input
+                    class="features_filter_input filter_input_checkbox visually-hidden"
+                    type="checkbox"
+                    name="block-advantages"
+                    id="block_advantages_feature"
+                  />
+                  <label
+                    for="block_advantages_feature"
+                    class="features_filter_label"
+                    >Блок преимуществ</label
+                  >
                 </li>
-                <li class="filter_option filter_checkbox">
-                  <label>
-                    <input
-                      class="filter_input filter_input_checkbox"
-                      type="checkbox"
-                      name="features"
-                      value="news"
-                      checked
-                    />
-                    <span class="check_box"></span>
-                    <span class="check_desc">Новости</span>
-                  </label>
+                <li class="features_filter_item">
+                  <input
+                    class="features_filter_input filter_input_checkbox visually-hidden"
+                    type="checkbox"
+                    name="news_feature"
+                    id="news"
+                    checked
+                  />
+                  <label for="news" class="features_filter_label"
+                    >Новости</label
+                  >
                 </li>
-                <li class="filter_option filter_checkbox">
-                  <label>
-                    <input
-                      class="filter_input filter_input_checkbox"
-                      type="checkbox"
-                      name="features"
-                      value="gallery"
-                    />
-                    <span class="check_box"></span>
-                    <span class="check_desc">Галерея</span>
-                  </label>
+                <li class="features_filter_item">
+                  <input
+                    class="features_filter_input filter_input_checkbox visually-hidden"
+                    type="checkbox"
+                    name="gallary_feature"
+                    id="gallary"
+                  />
+                  <label for="gallary" class="features_filter_label"
+                    >Галерея</label
+                  >
                 </li>
-                <li class="filter_option filter_checkbox">
-                  <label>
-                    <input
-                      class="filter_input filter_input_checkbox"
-                      type="checkbox"
-                      name="features"
-                      value="basket"
-                    />
-                    <span class="check_box"></span>
-                    <span class="check_desc">Корзина</span>
-                  </label>
+                <li class="features_filter_item">
+                  <input
+                    class="features_filter_input filter_input_checkbox visually-hidden"
+                    type="checkbox"
+                    name="cart_feature"
+                    id="cart"
+                  />
+                  <label for="cart" class="features_filter_label"
+                    >Корзина</label
+                  >
                 </li>
               </ul>
             </fieldset>
@@ -277,7 +275,7 @@
           <ul class="card_list">
             <li class="card_item">
               <img
-                src="img/Products/Product_Sedona.jpg"
+                src="img/products/product_Sedona.jpg"
                 alt="Информационный сайт для туристов Sedona"
                 width="358"
                 height="578"
@@ -296,7 +294,7 @@
             </li>
             <li class="card_item">
               <img
-                src="img/Products/Product_PinkApp.jpg"
+                src="img/products/product_PinkApp.jpg"
                 alt="Продуктовый лендинг приложения для IOS и Android Pink App"
                 width="358"
                 height="578"
@@ -315,7 +313,7 @@
             </li>
             <li class="card_item">
               <img
-                src="img/Products/Product_Borodinski.jpg"
+                src="img/products/product_Borodinski.jpg"
                 alt="Сайт салона красоты для мужчин Barbershop Borodinski"
                 width="358"
                 height="578"
@@ -334,7 +332,7 @@
             </li>
             <li class="card_item">
               <img
-                src="img/Products/Product_Mishka.jpg"
+                src="img/products/product_Mishka.jpg"
                 alt="Интернет-магазин вязаных игрушек Mishka"
                 width="358"
                 height="578"
@@ -353,7 +351,7 @@
             </li>
             <li class="card_item">
               <img
-                src="img/Products/Product_APlus.jpg"
+                src="img/products/product_APlus.jpg"
                 alt="Лендинг курсов повышения квалификации A Plus"
                 width="358"
                 height="578"
@@ -372,7 +370,7 @@
             </li>
             <li class="card_item">
               <img
-                src="img/Products/Product_Kvast.jpg"
+                src="img/products/product_Kvast.jpg"
                 alt="Промо-сайт производителя крафтового пива Кваст"
                 width="358"
                 height="578"
@@ -409,11 +407,11 @@
     </main>
     <div class="conteiner_map">
       <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <div class="map_map">
           <img
             src="img/map.png"
-            alt="Карта с расположением студии Nerds в Санкт-Петербурге"
+            alt="Карта с расположением студии Nerds в Санкт-Петербурге по адресу ул. Б. Конюшенная, д. 19/8"
             width="1440"
             height="416"
           />
@@ -430,7 +428,10 @@
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts_header">NЁRDS DESIGN STUDIO</p>
           <address class="contacts_description">
-            191186, Санкт-петербург, ул. Б. Конюшенная, д. 19/8
+            <span class="contacts_description_padding"
+              >191186, Санкт-Петербург,</span
+            >
+            ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8
           </address>
           <a class="contacts_phone" href="tel:+78122757575"
             >тел. +7 (812) 275-75-75
@@ -482,14 +483,13 @@
               class="modal_close_button"
               type="button"
               title="Закрыть окно отправки сообщения"
-            >
-              Закрыть
-            </button>
+              aria-label="Закрыть"
+            ></button>
           </p>
         </form>
       </div>
     </section>
-    <footer class="main_footer">
+    <footer class="">
       <div class="container">
         <div class="footer_inner">
           <section class="footer_social">
