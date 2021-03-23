@@ -28,12 +28,19 @@ window.addEventListener('keydown', function(evt) {
 
 /* Slider */
 
-const slideToggle = document.querySelector('.slide_control');
-const slideImg = document.querySelector('.features_item');
+const slideToggleBtns = document.querySelectorAll('.slide_control');
+const slides = document.querySelectorAll('.features_item');
 
-slideToggle.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  slideToggle.classList.add('slide_control--current:before');
-  slideImg.classList.add('features_item--curent');
+const clearSelected = function () {
+  document.querySelector('.slide_control--current').classList.remove('slide_control--current');
+  document.querySelector('.features_item--current').classList.remove('features_item--current');
+};
+
+slideToggleBtns.forEach(function (slideToggle, index) {
+  slideToggle.addEventListener('click', function (evt) {
+    clearSelected();
+    evt.currentTarget.classList.add('slide_control--current');
+    slides[index].classList.add('features_item--current');
+  });
 });
 
